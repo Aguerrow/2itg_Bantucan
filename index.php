@@ -29,13 +29,15 @@ class Employee
 
     public function displayInfo() 
     {
-        echo "Name: " . $this->name;
-        echo "Salary: " . $this->salary;
+        echo "Employee's Basic Information: <br><br>";
+        echo "Name: " . $this->name . "<br>";
+        echo "Salary: " . $this->salary . "<br>";
     }
 
 }
 
-class Manager extends Employee {
+class Manager extends Employee 
+{
     private $department;
     
     public function __construct($department) {
@@ -51,5 +53,17 @@ class Manager extends Employee {
         echo "Department: " . $this->department;
     }
 }
+
+$myManager = new manager("Accounting");
+$myManager->setName("Isagi Yoichi");
+$myManager->setSalary(25000);
+
+
+$name = $myManager->getName();
+$salary = $myManager->getSalary();
+$department = $myManager->getDepartment();
+
+
+$myManager->printInfo();
 
 ?>
