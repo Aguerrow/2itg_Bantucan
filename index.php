@@ -3,8 +3,8 @@
 
 class Employee
 {
-    private name;
-    private salary;
+    private $name;
+    private $salary;
 
 
     public function setName($name) 
@@ -29,9 +29,26 @@ class Employee
 
     public function displayInfo() 
     {
-        echo "Employee's Basic Information"
         echo "Name: " . $this->name;
         echo "Salary: " . $this->salary;
+    }
+
+}
+
+class Manager extends Employee {
+    private $department;
+    
+    public function __construct($department) {
+        $this->department = $department;
+    }
+    
+    public function getDepartment() {
+        return $this->department;
+    }
+    
+    public function printInfo() {
+        parent::displayInfo();
+        echo "Department: " . $this->department;
     }
 }
 
