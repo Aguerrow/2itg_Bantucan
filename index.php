@@ -1,4 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Blue Lock Corporation </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/design.css">
+
+</head>
+<body>
+    <div class="banner">
+        <div class="content">
+            <h1>BLUE LOCK CORPORATION</h1>
+            <p>Always on the Go, Always feed your Ego!</p>
+        </div>
+        <div class="container">
 <?php
+
+/*A little fun fact, I used the same concept of our inheritance last academic year. 
+I copied it and translated it to php.*/
+
 
 // Parent Class
 class Employee
@@ -138,3 +157,8 @@ $intern1 = new Intern("Hyoma Chigiri", 1000);
 $intern1->printInfo();
 
 ?>
+
+</div>
+    </div>
+</body>
+</html>
